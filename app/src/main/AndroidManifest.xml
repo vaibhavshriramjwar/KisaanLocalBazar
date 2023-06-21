@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="xyz.vpscorelim.kisaan">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+
+    <application
+        android:name=".KisanLocalBazar"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".dealer.SearchTwo"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xyz.vpscorelim.kisaan.dealer.Dealer_Home"/>
+        </activity>
+
+        <activity android:name=".customer.SearchOne"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xyz.vpscorelim.kisaan.customer.Customer_Home"/>
+        </activity>
+
+        <activity android:name=".AboutUs"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Developer"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".PrivacyPolicy"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.Dealer_change_Location"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerOrderToFarmerDeatails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.FarmerOrderDetails_Dealer"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerMyOrderDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DFarmerProductDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DFarmerDealerProfile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.SearchFarmerByDealer"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerViewMyCart"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerOrderDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.FarmerOwnOrderDeatils"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.FarmerViewMyCart"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.ProductDetailsPage"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.FarmerDealerProfile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerEditProduct"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerOrderList"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerFormPop"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.DealerAddProduct"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.EditFarmerProduct"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.change_Location"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.SearchDealerFarmer"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Market.Market"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Weather.WeatherActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.CustomerOrderDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.FarmerOrderDetails"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.Farmer_Order_Status"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.CustomerMyOrder"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.ViewMyCart"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.Vegetable_Details"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.His_Farmer_Profile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <!--
+
+             The API key for Google Maps-based APIs is defined as a string resource.
+
+             (See the file "res/values/google_maps_api.xml").
+
+
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".customer.Near_by_farmers"
+            android:label="@string/title_activity_near_by_farmers" />
+
+        <activity android:name=".customer.Find_Farmer"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.Customer_Info_Form"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.Farmer_Add_product"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.Farmer_popup"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.Dealer_Profile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.Customer_Profile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="https://kisaanlocalbazar.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".farmer.Farmer_Profile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".customer.Customer_Home"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".dealer.Dealer_Home"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".farmer.Farmer_Home"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".CheckUserProfile"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Verify_OTP"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Log_In"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Language_Selection"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Onboarding_Activity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

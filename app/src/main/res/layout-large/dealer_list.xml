@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#fff"
+    android:layout_marginBottom="20dp"
+    app:cardElevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/bottom"
+            android:id="@+id/view"/>
+
+        <RelativeLayout
+            android:layout_toEndOf="@id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dealer_ic"
+                android:id="@+id/img"/>
+
+            <TextView
+                android:id="@+id/txt_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img"
+                android:text="Shri Sai Shop"
+                android:textSize="20sp"
+                android:textColor="#FF6F00"
+                android:fontFamily="@font/ubuntu_m"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_own_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_store_name"
+                android:layout_toRightOf="@id/img"
+                android:text="By Vaibhav Shriramjwar"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:fontFamily="@font/ubuntu_m"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_sub_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_own_name"
+                android:layout_toRightOf="@id/img"
+                android:text="Sainagar"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:fontFamily="@font/ubuntu_m"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_sub_area"
+                android:layout_toRightOf="@id/img"
+                android:text="Amravati"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:fontFamily="@font/ubuntu_m"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/state_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_sub_area"
+                android:layout_toRightOf="@id/txt_city_name"
+                android:layout_marginLeft="10dp"
+                android:text="Maharashtra"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:fontFamily="@font/ubuntu_m"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

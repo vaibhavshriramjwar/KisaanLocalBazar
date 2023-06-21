@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".dealer.DealerFormPop">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Your Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Details"
+                android:fontFamily="@font/ubuntu_m"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_lbl"/>
+
+
+            <EditText
+                android:id="@+id/store_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_lbl"
+                android:inputType="textPersonName"
+                android:hint="Shop Name"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_store_25"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+            <EditText
+                android:id="@+id/own_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/store_name"
+                android:inputType="textPersonName"
+                android:hint="Your Name"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Location"
+                android:fontFamily="@font/ubuntu_m"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/own_name"
+                android:id="@+id/txt_lbl2"/>
+
+            <EditText
+                android:id="@+id/state_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_lbl2"
+                android:inputType="textPersonName"
+                android:hint="State"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/city_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state_name"
+                android:inputType="textPersonName"
+                android:hint="City"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/sub_area"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_name"
+                android:inputType="textPersonName"
+                android:hint="Tehsil / Sub Area"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/complete_ad"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_area"
+                android:inputType="textPersonName"
+                android:hint="Shop Address"
+                android:maxLines="1"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are You Provide Home Delivery Service"
+                android:fontFamily="@font/ubuntu_m"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/complete_ad"
+                android:id="@+id/co"/>
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_below="@id/co"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upi_id_optional"
+                android:fontFamily="@font/ubuntu_m"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/radio"
+                android:id="@+id/upiLbl"/>
+
+            <EditText
+                android:id="@+id/upiIDText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upiLbl"
+                android:inputType="text"
+                android:hint="@string/upi_id"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_info"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/upiIDText"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FFAA00"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Update"
+                android:textAllCaps="false"
+                app:cornerRadius="0dp"
+                android:clickable="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+

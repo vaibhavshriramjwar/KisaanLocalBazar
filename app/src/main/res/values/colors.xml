@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#FF6F00</color>
+
+    <color name="colorUPI">#0E7407</color>
+
+    <color name="bottom">#FF6F00</color>
+
+    <color name="colorAccent">#FF402D</color>
+    <color name="colorPrimaryfggh">#fff</color>
+    <color name="tabtextcolor">#fff</color>
+    <color name="tabindicatorcolor">#2d2d2d</color>
+
+    <color name="tab_back">#99AAAB</color>
+
+
+    <color name="colorPrimary1">#ffffff</color>
+    <color name="colorPrimaryDark1">#ffffff</color>
+    <color name="colorAccent1">#ffffff</color>
+    <color name="purple">#ffaa66cc</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="colorTransBg">#26111111</color>
+    <!-- Colors for the Button style -->
+    <color name="profileTextColor">#FF5A1E</color>
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <color name="bgBottomNavigation">#2CA7E0</color>
+    <!-- Colors foe tab and text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+    <color name="colorAccen1t">#FF4081</color>
+    <color name="colorHead">#363147</color>
+    <color name="colorpara">#8b8a8d</color>
+    <!--normal colors-->
+    <color name="darkTextColor">#020000</color>
+    <color name="color1">#EAF0F1</color>
+    <color name="color2">#EAF0F1</color>
+    <color name="color3">#EAF0F1</color>
+    <color name="color4">#EAF0F1</color>
+
+    <color name="color12">#424549</color>
+    <color name="color22">#7e455e</color>
+    <color name="color32">#796e25</color>
+    <color name="color42">#59717c</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#00b0ff</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+    <color name="df_transparent_black_background">#80000000</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="whiteTextColor1">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <!--colors for light mode-->
+    <color name="contentBodyColor">#FCFCFC</color>
+
+    <color name="imageBorderColor">#E01E7A</color>
+    <color name="miniTitle">#2A2E43</color>
+    <!--colors for crop activity-->
+    <!--<color name="ucrop_color_toolbar">@color/teal_500</color>-->
+    <!--<color name="ucrop_color_statusbar">@color/teal_700</color>-->
+    <!--<color name="ucrop_color_widget_active">@color/teal_500</color>-->
+
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#0ABDE3</color>
+    <color name="profileAccentColor">#7B8788</color>
+
+    <color name="profileBackground">#fff</color>
+
+    <color name="profileEditTextColor">#707070</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="lightGray">#F2F2F2</color>
+
+    <color name="disabledBtnBg">#999999</color>
+
+    <color name="col1">#EB6C6C</color>
+    <color name="col2">#FA876B</color>
+
+
+    <color name="col3">#2193b0</color>
+    <color name="col4">#6dd5ed</color>
+
+
+    <color name="col5">#43cea2</color>
+    <color name="col6">#185a9d</color>
+
+
+    <color name="col7">#EB3349</color>
+    <color name="col8">#F45C43</color>
+
+
+    <color name="col9">#56AB2F</color>
+    <color name="col10">#A8E063</color>
+
+
+
+
+    <color name="my_color1">#EAF0F1</color>
+    <color name="my_color2">#303F9F</color>
+    <color name="my_color3">#FF4081</color>
+    <color name="my_color4">#424549</color>
+    <color name="my_color5">#7e455e</color>
+    <color name="my_color6">#796e25</color>
+    <color name="my_color7">#59717c</color>
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:elevation="10dp"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        android:padding="10dp">
+        
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/farmer_ic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img"/>
+
+
+
+        <TextView
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_below="@id/img"
+            android:id="@+id/far_name"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/far_phone"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_below="@id/far_name"
+            android:textSize="15sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generate_btn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/far_phone"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFAA00"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="View Products"
+            android:textAllCaps="false"
+            app:cornerRadius="5dp"
+            android:clickable="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"/>
+        
+        
+    </RelativeLayout>
+    
+    
+
+   
+
+
+</RelativeLayout>

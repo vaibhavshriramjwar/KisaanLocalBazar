@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    tools:context=".farmer.FarmerArriveOrders">
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_marginTop="0dp"
+        app:tabTextColor="#fff"
+        app:tabIndicatorColor="@color/tabindicatorcolor"
+        android:background="@color/bottom"
+        android:id="@+id/tablayout_id"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/tablayout_id"
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="always" />
+
+
+</RelativeLayout>

@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".dealer.Dealer_Home">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kisaan_local_bazaar"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/ubuntu_m"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/identity_24"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cart"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/cart_icon"
+                android:layout_toLeftOf="@id/cart"
+                android:layout_marginRight="20dp"
+                android:id="@+id/cart2"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_below="@id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/find_vendor"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon24"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vendor"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/find_dealer"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon21"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dea"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/my_order"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon27"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Orders"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_below="@id/lin1"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/market"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon26"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Market"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/weather"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon25"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weather"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/about_us"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/abo"
+                            android:layout_gravity="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="3dp"
+                android:id="@+id/slide_card">
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_below="@id/slide_card"
+                android:id="@id/store_open">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    gl:start_color="@color/col7"
+                    gl:end_color="@color/col8"
+                    gl:orientation="LEFT_RIGHT">
+
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_store_is_closed"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:textSize="23dp"
+                            android:id="@+id/store_lbl"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/click_here_to_change_setting"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/store_lbl"
+                            android:id="@+id/store_lbl_2"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardElevation="3dp"
+                android:layout_below="@id/store_open"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#fff">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_groceries_pana"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/ic_img"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/ic_img"
+                        android:text="Lorem Ipsum is simply \ndummy text of the \nprinting."
+                        android:id="@+id/textTitle"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/make_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FB641B"
+                        android:layout_below="@id/textTitle"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Get Started"
+                        app:cornerRadius="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="false"
+                        android:clickable="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="12sp"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                android:layout_below="@id/card1"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#fff">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/linear1"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon1"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/img1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vendor"
+                                android:textSize="15sp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/ubuntu_m"
+                                android:id="@+id/txt1"/>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_width="80dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/linear3"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon26"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/img3"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/market"
+                                android:textSize="15sp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/ubuntu_m"
+                                android:id="@+id/txt3"/>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_width="80dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/linear5"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon25"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/img6"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/weather"
+                                android:textSize="15sp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/ubuntu_m"
+                                android:id="@+id/txt6"/>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_width="110dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/linear2"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_add"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/img2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_product"
+                                android:textSize="15sp"
+                                android:textAlignment="center"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/ubuntu_m"
+                                android:id="@+id/txt2"/>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="0dp"
+                android:visibility="gone"
+                android:layout_below="@id/card3"
+                android:id="@+id/home_del">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    gl:start_color="@color/col9"
+                    gl:end_color="@color/col10"
+                    android:clickable="true"
+                    android:focusable="true"
+                    gl:orientation="LEFT_RIGHT">
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/you_disable_home_delivery"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:textSize="23dp"
+                            android:id="@+id/home_lbl"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/click_here_to_change_setting"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/home_lbl"
+                            android:id="@+id/home_lbl_2"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardElevation="3dp"
+                android:layout_below="@id/home_del"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#fff">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/icon1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/ic_img2"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/ic_img2"
+                        android:text="Lorem Ipsum is simply \ndummy text of the \nprinting."
+                        android:id="@+id/textTitle1"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/make_order2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FB641B"
+                        android:layout_below="@id/textTitle1"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Get Started"
+                        app:cornerRadius="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="false"
+                        android:clickable="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="12sp"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                android:layout_below="@id/card4"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#fff">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vendors_around_amravati_area"
+                        android:id="@+id/textTitle5"/>
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show More"
+                        android:id="@+id/txt4"/>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTitle5"
+                        android:orientation="horizontal"
+                        android:id="@+id/farmer_list"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card5"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="3dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/slide_card1">
+
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                android:layout_below="@id/slide_card1"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#fff">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vendors_around_amravati_area"
+                        android:id="@+id/textTitle6"/>
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show More"
+                        android:id="@+id/txt5"/>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTitle6"
+                        android:orientation="horizontal"
+                        android:id="@+id/farmer_list_ar"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:itemBackground="@color/bottom"
+            android:layout_alignParentBottom="true"
+            app:itemTextColor="@drawable/menu_selector"
+            app:itemIconTint="@drawable/menu_selector"
+            app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+            app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/dealer_menu"
+            android:id="@+id/dealer_bottom_navigation"/>
+
+
+
+
+</RelativeLayout>

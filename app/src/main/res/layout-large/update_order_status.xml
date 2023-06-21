@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:background="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center"
+    android:layout_height="500dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_status"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:id="@+id/tet_label"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@id/tet_label"
+                    android:background="#DAE0E2"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/div1"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_status"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/div1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/tet_label_y"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:textSize="17sp"
+                    android:textColor="#1A8207"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tet_label_y"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/tet_label_op"/>
+
+                <Spinner
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tet_label_op"
+                    android:id="@+id/spin1"
+                    android:layout_marginTop="15dp"
+                    android:spinnerMode="dialog"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit"
+                    android:padding="22dp"
+                    />
+
+                <EditText
+                    android:id="@+id/order_date"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spin1"
+                    android:inputType="date"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/mentioned_delivery_date"
+                    android:textColorHint="#99AAAB"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit"
+                    android:padding="12dp"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/update_order"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#FB641B"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/change_status"
+                    app:cornerRadius="5dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/order_date"
+                    android:clickable="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_order"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="CANCEL"
+                    android:id="@+id/can"
+                    android:clickable="true"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_about_status"
+                    android:textSize="15sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/can"
+                    android:textColor="#0A79DF"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/tet_label_z"/>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

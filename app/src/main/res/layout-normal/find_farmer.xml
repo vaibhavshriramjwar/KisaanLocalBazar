@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    tools:context=".customer.Find_Farmer">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/lin1"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:padding="20dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/search_field"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/search_layout"-->
+<!--            android:ems="10"-->
+<!--            android:fontFamily="@font/open_sans_semibold"-->
+<!--            android:hint="Search here"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="20dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:textColor="#999999"-->
+<!--            android:textSize="16sp"-->
+<!--            android:autofillHints="" />-->
+
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/search_btn"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@android:color/background_light"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/ic_search"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="20dp"/>&ndash;&gt;-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/farmerRecyclerview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"/>-->
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/t2"
+                android:text="Your Products"/>
+
+
+
+
+
+
+
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/t2"
+                android:id="@+id/farmerRecyclerview"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="@drawable/menu_selector"
+        app:itemIconTint="@drawable/menu_selector"
+        app:menu="@menu/customer_menu"
+        android:id="@+id/customer_bottom_navigation"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>

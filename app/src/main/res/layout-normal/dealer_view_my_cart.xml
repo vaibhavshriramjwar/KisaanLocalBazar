@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F8"
+    tools:context=".dealer.DealerViewMyCart">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_cart"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:lottie_fileName="empty.json"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:id="@+id/txt_title_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_cart_is_empty"
+        android:layout_below="@id/empty"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/open_sans_bold"/>
+
+    <TextView
+        android:layout_below="@id/txt_title_u"
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/cart_desc"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_sho"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FB641B"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/start_shopping"
+        app:cornerRadius="5dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_below="@id/log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"/>
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_scroll"
+        android:background="#F9F8F8"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/rel2">
+
+        <RelativeLayout
+            android:background="#F9F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9F8F8"
+                android:visibility="visible"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/rel3">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:id="@+id/cart_list"/>
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="380dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/cart_list"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/card9">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/lop">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shipping_to"
+                            android:textColor="#0E7407"
+                            android:padding="3dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="15sp"
+                            android:id="@+id/ship"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vaibhav Shriramjwar"
+                            android:textColor="#000"
+                            android:padding="3dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="16sp"
+                            android:layout_below="@id/ship"
+                            android:id="@+id/customer_name"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shipping_address"
+                            android:textColor="#0E7407"
+                            android:padding="3dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="15sp"
+                            android:layout_below="@id/customer_name"
+                            android:id="@+id/shipAddress"/>
+                        <LinearLayout
+                            android:id="@+id/rad"
+                            android:layout_below="@id/shipAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <RadioButton
+                                    android:id="@+id/radioYes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/use_this_address"
+                                    android:padding="0dp"
+                                    android:checked="true"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textColor="#0E7407"
+                                    android:onClick="onRadioButtonClicked"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="D4,Ramkrushna Apartment,Purva Colony,Sainagar,Amravati 444607"
+                                    android:textColor="#000"
+                                    android:padding="3dp"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15dp"
+                                    android:id="@+id/shipAddressT"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/radioNo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/no_use_another_address"
+                                    android:padding="0dp"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textColor="#0E7407"
+                                    android:onClick="onRadioButtonClicked"/>
+
+
+                                <EditText
+                                    android:id="@+id/address_location"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textMultiLine"
+                                    android:hint="@string/add_new_location"
+                                    android:textColorHint="#99AAAB"
+                                    android:drawableLeft="@drawable/ic_location"
+                                    android:drawablePadding="10dp"
+                                    android:maxLines="8"
+                                    android:layout_marginLeft="15dp"
+                                    android:visibility="gone"
+                                    android:background="@drawable/edit"
+                                    android:padding="12dp"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expected_delivery_you_want"
+                            android:textColor="#000"
+                            android:padding="3dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="15sp"
+                            android:layout_below="@id/rad"
+                            android:layout_marginLeft="18dp"
+                            android:id="@+id/expect"/>
+
+
+                        <EditText
+                            android:id="@+id/expect_date"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/your_expected_delivery_date"
+                            android:textColorHint="#99AAAB"
+                            android:drawableLeft="@drawable/ic_access_time_24"
+                            android:drawablePadding="10dp"
+                            android:maxLines="1"
+                            android:editable="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/expect"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/edit"
+                            android:padding="12dp"/>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#505050"
+                            android:layout_below="@id/expect_date"
+                            android:id="@+id/view"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_options"
+                            android:textColor="#0E7407"
+                            android:padding="3dp"
+                            android:layout_below="@id/view"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="15sp"
+                            android:id="@+id/tit"/>
+
+                        <ImageView
+                            android:id="@+id/cash_img"
+                            android:layout_width="200dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cash_on"
+                            android:layout_below="@id/tit"
+                            android:clickable="true"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/payment_cho"
+                            android:layout_below="@id/cash_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/radio_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <RadioButton
+                                    android:id="@+id/radioCash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cash On Delivery"
+                                    android:padding="0dp"
+                                    android:checked="true"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textColor="#0E7407"
+                                    android:onClick="onRadioButtonPayment"/>
+
+
+
+
+                                <RadioButton
+                                    android:id="@+id/radioOnline"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Online Payment(UPI ID)"
+                                    android:padding="0dp"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textColor="#0E7407"
+                                    android:onClick="onRadioButtonPayment"/>
+
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="00000000"
+                                    android:textColor="#000"
+                                    android:padding="3dp"
+                                    android:visibility="gone"
+                                    android:letterSpacing="0.5"
+                                    android:fontFamily="@font/open_sans_bold"
+                                    android:textSize="25sp"
+                                    android:layout_marginLeft="80px"
+
+                                    android:textAlignment="center"
+                                    android:layout_below="@id/upiId"
+                                    android:id="@+id/upiIDText"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/payment_cho"
+                            android:padding="8dp"
+                            android:id="@+id/rt"
+                            android:layout_marginTop="8dp">
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/order_total"
+                                android:padding="8dp"
+                                android:textColor="#000"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:textSize="22sp"
+                                android:layout_marginTop="8dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rs 0"
+                                android:padding="8dp"
+                                android:textColor="#000"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:textSize="22sp"
+                                android:id="@+id/total"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="8dp"/>
+
+
+                        </RelativeLayout>
+
+
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/make_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="-6dp"
+                            android:layout_centerHorizontal="true"
+                            android:backgroundTint="#FB641B"
+                            android:layout_below="@id/rt"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:text="@string/proceed"
+                            app:cornerRadius="0dp"
+                            android:textAllCaps="false"
+                            android:clickable="true"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="16sp"/>
+
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/bottom"
+        app:itemTextColor="@drawable/menu_selector"
+        app:itemIconTint="@drawable/menu_selector"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/dealer_menu"
+        android:id="@+id/dealer_bottom_navigation"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

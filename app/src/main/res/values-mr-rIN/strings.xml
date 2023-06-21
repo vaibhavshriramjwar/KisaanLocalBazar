@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">kisaan</string>
+    <string name="choose_lang">या अ‍ॅपमध्ये आपण वापरू इच्छित असलेली भाषा</string>
+
+
+    <!--Login Screen String-->
+    <string name="role_choose">आपण कोण आहात</string>
+    <string name="farmer">शेतकरी</string>
+    <string name="customer">ग्राहक</string>
+    <string name="dealer">विक्रेता</string>
+    <string name="verify">आपला नंबर सत्यापित करा</string>
+    <string name="verify_desc">सत्यापनासाठी कृपया आपला देश कोड \n आणि फोन नंबर प्रविष्ट करा</string>
+    <string name="mobno">कृपया तुमचा मोबाइल नंबर</string>
+    <string name="generate_otp">OTP पाठवा</string>
+    <string name="privacy_policy">Lorem ipsum dolor sit amet, consectetur adipiscing elit,rum eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit,rum eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+
+
+    <!--Verify Otp Screen-->
+    <string name="enter_otp">ओटीपी प्रविष्ट करा</string>
+    <string name="we_have_sent_you_an_otp_n_for_phone_number_verification">आम्ही आपल्याला एक ओटीपी पाठविला आहे \n फोन नंबर पडताळणीसाठी</string>
+    <string name="enter_otp_e">ओटीपी प्रविष्ट करा</string>
+    <string name="sign_in">साइन इन करा</string>
+
+
+
+
+    <!--Verify Otp Screen-->
+    <string name="change_your_location">आपले स्थान बदला</string>
+    <string name="new_location">नवीन स्थान</string>
+    <string name="update_location">अद्यतनित स्थान</string>
+    <string name="update_product">उत्पादन अद्यतनित करा</string>
+    <string name="product_categories">उत्पादन श्रेणी</string>
+    <string name="product_name">उत्पादनाचे नांव</string>
+    <string name="product_quantity">उत्पादन प्रमाण</string>
+    <string name="product_unit">उत्पादन एकक</string>
+    <string name="product_rate">उत्पादन दर</string>
+
+
+
+
+
+    <string name="weather_update">हवामान अद्यतन</string>
+    <string name="wind">वारा</string>
+    <string name="pressure">दबाव</string>
+    <string name="humidity">आर्द्रता</string>
+    <string name="sunrise">सूर्योदय</string>
+    <string name="sunset">सूर्यास्त</string>
+    <string name="geo_cords">जिओ कॉर्ड</string>
+
+
+
+    <string name="view_products">उत्पादने पहा</string>
+
+    <string name="get_current_location">सध्याचे स्थान मिळवा</string>
+
+    <string name="get_from_map">नकाशावरुन जा</string>
+
+    <string name="kisaan_local_bazaar">किसान लोकल बाज़ार</string>
+
+    <string name="vendor">शेतकरी</string>
+
+    <string name="dealer_n">विक्रेता</string>
+
+    <string name="orders">ऑर्डर</string>
+
+    <string name="market">बाजार</string>
+
+    <string name="weather">हवामान</string>
+
+    <string name="vendors_around_amravati_area">आपल्या क्षेत्राभोवती विक्रेते</string>
+<!--
+    <string name="vendors_around_amravati_area">Vendors Around Amravati Area</string>-->
+
+    <string name="your_details">तुमचा तपशील</string>
+
+    <string name="update_your_details">आपले तपशील अद्यतनित करा</string>
+
+    <string name="info_form_desc" />
+
+    <string name="your_full_name">तुमचे पुर्ण नाव</string>
+
+    <string name="location_details">स्थान तपशील</string>
+
+    <string name="your_state">आपले राज्य</string>
+
+    <string name="your_district">आपला जिल्हा</string>
+
+    <string name="your_tehsil">आपले तहसील</string>
+
+    <string name="complete_address">पूर्ण पत्ता</string>
+
+    <string name="update_info">अद्यतनित करा</string>
+
+    <string name="my_order">माझे ऑर्डर</string>
+
+    <string name="order_details">ऑर्डर तपशील</string>
+
+    <string name="your_order_details">आपल्या ऑर्डर तपशील</string>
+
+    <string name="shipping_details">शिपिंग तपशील :</string>
+
+    <string name="farmer_details">शेतकरी तपशील :</string>
+
+    <string name="notification_setting">सूचना सेटिंग</string>
+
+    <string name="allow_notification">सूचनेस परवानगी द्या</string>
+
+    <string name="your_profile">आपले प्रोफाइल</string>
+
+    <string name="you_login_as_a_customer">आपण सध्या ग्राहक म्हणून लॉग इन केले आहे</string>
+
+    <string name="my_order_p">माझी ऑर्डर</string>
+
+    <string name="notification">सूचना</string>
+
+    <string name="my_delivery_address">माझा वितरण पत्ता</string>
+
+    <string name="edit_profile">प्रोफाईल संपादित करा</string>
+
+    <string name="privacy_policy_p">गोपनीयता धोरण</string>
+
+    <string name="developer">विकसक</string>
+
+    <string name="about_us">आमच्याबद्दल</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="share_app">Share App</string>
+
+    <string name="here_you_go">Here you go!</string>
+
+    <string name="pop_desc">desc</string>
+
+    <string name="make_order">ऑर्डर द्या</string>
+
+    <string name="cancel">CANCEL</string>
+<!--
+    <string name="add_product">Add Product</string>-->
+
+    <string name="product_details">उत्पादन तपशील</string>
+<!--
+    <string name="product_name">Product Name</string>-->
+
+    <string name="product_brand">उत्पादन ब्रँड</string>
+
+    <string name="add_image">प्रतिमा जोडा</string>
+
+    <string name="attach_appropriate_image_of_product_that_you_can_sell">आपण विक्री करू शकता अशा उत्पादनाची योग्य प्रतिमा जोडा.</string>
+
+    <string name="image_not_updatable_next_time">पुढील वेळी प्रतिमा अद्यतनित करण्यायोग्य नाही</string>
+
+    <string name="add_quantity">प्रमाण जोडा</string>
+
+    <string name="rate_per_product">दर उत्पादन दर</string>
+
+    <string name="add_product">उत्पादन जोडा</string>
+
+    <string name="title_activity_near_by_farmers">near</string>
+
+<!--    <string name="product_brand">Product Brand</string>-->
+<!--    -->
+<!--    <string name="product_quantity">Product Quantity</string>-->
+<!--    -->
+<!--    <string name="product_unit">Product Unit</string>-->
+<!--    -->
+<!--    <string name="product_rate">Product Rate</string>-->
+<!--    -->
+<!--    <string name="update_product">Update Product</string>-->
+
+    <string name="kisaan_local_bazar">किसान लोकल बाज़ार</string>
+
+    <string name="selling_location">स्थान विक्री</string>
+
+    <string name="contact_to_farmer">या शेतकर्‍याशी संपर्क साधा</string>
+
+    <string name="search_item">आयटम शोधा</string>
+
+    <string name="show_all">सगळं दाखवा</string>
+
+    <string name="vegetables">भाज्या</string>
+
+    <string name="fruits">फळे</string>
+
+    <string name="grains">धान्य</string>
+
+<!--    <string name="product_details">Product Details</string>-->
+
+    <string name="frequently_bought_together">वारंवार एकत्र खरेदी केली</string>
+
+    <string name="view_cart">कार्ट पहा</string>
+
+    <string name="add_to_cart">कार्टमध्ये जोडा</string>
+
+    <string name="add_your_details">आपले तपशील जोडा</string>
+
+    <string name="shop_details">दुकान तपशील</string>
+
+    <string name="shop_name">दुकान नाव</string>
+
+    <string name="your_name">आपले नाव</string>
+
+    <string name="shop_location">दुकान स्थान</string>
+
+    <string name="state">राज्य</string>
+
+    <string name="city">शहर</string>
+
+    <string name="tehsil_sub_area">तहसील / उप क्षेत्र</string>
+
+    <string name="shop_address">दुकानाचा पत्ता</string>
+
+    <string name="are_you_provide_home_delivery_service">आपण होम डिलीव्हरी सेवा प्रदान करता</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="no">No</string>
+
+    <string name="update">अद्यतनित करा</string>
+
+<!--    <string name="kisaan_local_bazaar">Kisaan Local Bazaar</string>-->
+
+    <string name="your_store_is_closed">आपले दुकान बंद आहे !</string>
+
+<!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+
+    <string name="you_disable_home_delivery">आपण सध्या होम डिलिव्हरी अक्षम केली आहे !</string>
+
+    <string name="click_here_to_change_setting">सेटिंग बदलण्यासाठी येथे क्लिक करा</string>
+
+    <string name="your_product">आपले उत्पादन</string>
+
+<!--    <string name="order_details">ORDER DETAILS</string>-->
+
+    <string name="call_customer">ग्राहकाला कॉल करा</string>
+
+    <string name="good_order_already_completed">चांगले! ऑर्डर आधीच पूर्ण</string>
+
+    <string name="update_order_status">ऑर्डर स्थिती अद्यतनित करा</string>
+
+    <string name="profile">प्रोफाइल</string>
+
+    <string name="you_login_as_dealer">आपण सध्या विक्रेता म्हणून लॉग इन केले आहे</string>
+
+    <string name="check_orders">ऑर्डर तपासा</string>
+
+    <string name="my_product">माझे उत्पादन</string>
+
+    <string name="edit_selling_address">विक्री पत्ता संपादित करा</string>
+
+    <string name="store_setting">स्टोअर सेटिंग</string>
+
+    <string name="notifications">अधिसूचना</string>
+
+    <string name="my_cart">माझी कार्ट</string>
+
+    <string name="your_cart_is_empty">तुमची कार्ट रिकामी आहे!</string>
+
+    <string name="cart_desc">cart_desc</string>
+
+    <string name="start_shopping">शॉपिंग प्रारंभ करा</string>
+
+    <string name="shipping_to">पाठविणे :</string>
+
+    <string name="shipping_address">गंतव्य पत्ता :</string>
+
+    <string name="use_this_address">हा पत्ता वापरा</string>
+
+    <string name="no_use_another_address">नाही! दुसरा पत्ता वापरा</string>
+
+    <string name="add_new_location">नवीन स्थान जोडा</string>
+
+    <string name="expected_delivery_you_want">आपण इच्छित अपेक्षित वितरण :</string>
+
+    <string name="your_expected_delivery_date">आपली अपेक्षित वितरण तारीख</string>
+
+    <string name="payment_options">पैसे भरणासाठीचे पर्याय :</string>
+
+    <string name="order_total">एकूण ऑर्डर :</string>
+
+    <string name="proceed">प्रक्रिया</string>
+
+    <string name="seeds">बियाणे</string>
+
+    <string name="pesticide">कीटकनाशक</string>
+
+    <string name="fertilizer">खते</string>
+
+    <string name="machinery">यंत्रसामग्री</string>
+
+<!--    <string name="your_store_is_closed">Your Store Is Closed !</string>-->
+<!--    -->
+<!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+<!--    -->
+<!--    <string name="you_disable_home_delivery">You Disable Home Delivery !</string>-->
+<!--    -->
+<!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+
+    <string name="desc" />
+
+    <string name="get_exact_location">अचूक स्थान मिळवा</string>
+
+    <string name="bulk_or_home_delivery_available">बल्क किंवा होम डिलिव्हरी उपलब्ध</string>
+
+    <string name="you_login_as_a_farmer">आपण एक शेतकरी म्हणून लॉगिन करा</string>
+
+    <string name="market_rates">बाजारभाव</string>
+
+    <string name="search_city">शोध शहर</string>
+
+    <string name="district">जिल्हा</string>
+
+<!--    <string name="state">State</string>-->
+<!--    -->
+<!--    <string name="market">Market</string>-->
+
+    <string name="commodity">व्यापारी माल</string>
+
+    <string name="variety">विविधता</string>
+
+    <string name="min_price">किमान किंमत</string>
+
+    <string name="max_price">कमाल किंमत</string>
+
+    <string name="modal_price">मॉडेल किंमत</string>
+
+    <string name="filter_search">फिल्टर शोध</string>
+
+    <string name="update_status">अद्यतन स्थिती</string>
+
+    <string name="current_status">वर्तमान स्थिती</string>
+
+    <string name="mentioned_delivery_date">डिलिव्हरी तारीख नमूद</string>
+
+    <string name="change_status">स्थिती बदला</string>
+
+    <string name="more_about_status"><![CDATA[स्थितीबद्दल अधिक >>]]></string>
+
+    <string name="change_language">भाषा बदला</string>
+
+    <string name="phone_number_required">नंबर आवश्यक आहे</string>
+    <string name="please_choose_role">कृपया तुमची भूमिका निवडा</string>
+    <string name="enter_code">कोड टाका...</string>
+    <string name="name_req">आपले नांव लिहा</string>
+    <string name="state_req">राज्याचे नाव आवश्यक आहे</string>
+    <string name="dist_req">जिल्हा नाव आवश्यक आहे</string>
+    <string name="teh_req">तहसील किंवा नगर नाव आवश्यक आहे</string>
+    <string name="add_req">आपला संपूर्ण पत्ता</string>
+    <string name="info_uodates">आपली माहिती यशस्वीरित्या अद्यतनित केली गेली आहे</string>
+    <string name="are_you_sure">Are you Sure!</string>
+    <string name="update_name">नाव बदल</string>
+    <string name="update_ad">पत्ता बदला</string>
+    <string name="update_city">शहर बदला</string>
+    <string name="edit_sub">उप क्षेत्र बदला</string>
+    <string name="edit_st">राज्य बदला</string>
+    <string name="home_del_ser_avail">होम डिलिव्हरी सेवा उपलब्ध</string>
+    <string name="home_del_ser_not_avail">होम डिलिव्हरी सेवा उपलब्ध नाही</string>
+    <string name="bulk_avail">थोक विक्रेता</string>
+    <string name="bulk_not_avail">थोक विक्रेता सेवे नाही</string>
+
+    <string name="bulk_availNot">थोक सेवेचा उल्लेख नाही</string>
+    <string name="selling_location_req">Selling location is required</string>
+    <string name="home_del_avail_or_not">Please Choose Home Delivery Option</string>
+    <string name="add_shop_location">Add your Shop location</string>
+    <string name="add_your_store_name">Add your Store Name</string>
+    <string name="home_lp">Please Choose Home Delivery Option</string>
+    <string name="refresh">Refresh</string>
+    <string name="sample">Text Here</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="upi_id_optional">UPI ID (Optional)</string>
+
+
+    <!--XXX-->
+</resources>

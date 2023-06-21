@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:background="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter_search"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:id="@+id/tet_label"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@id/tet_label"
+                    android:background="#DAE0E2"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/div1"/>
+
+
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/div1"
+                    android:inputType="text"
+                    android:hint="@string/state"
+                    android:textColorHint="#99AAAB"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/location_on_24"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit"
+                    android:padding="12dp"/>
+
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/state"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:textColorHint="#99AAAB"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/location_on_24"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit"
+                    android:padding="12dp"/>
+
+
+                <EditText
+                    android:id="@+id/sub"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/city"
+                    android:hint="@string/tehsil_sub_area"
+                    android:inputType="text"
+                    android:textColorHint="#99AAAB"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/location_on_24"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit"
+                    android:padding="12dp"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/update_order"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="#FB641B"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/filter_search"
+                    app:cornerRadius="5dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/sub"
+                    android:clickable="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_order"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="CANCEL"
+                    android:id="@+id/can"
+                    android:clickable="true"/>
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

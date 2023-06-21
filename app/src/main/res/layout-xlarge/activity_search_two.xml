@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".dealer.SearchTwo">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="#fff"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:layout_width="780dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:searchBackIcon="@drawable/ic_right_24"
+                app:searchBackground="@drawable/search_layout"
+                android:id="@+id/search_view"/>
+
+            <HorizontalScrollView
+                android:id="@+id/hori_scroll"
+                android:layout_below="@id/search_view"
+                android:scrollbars="none"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/show_all"
+                            android:layout_width="180dp"
+                            android:layout_height="70dp"
+                            android:text="@string/show_all"
+                            android:textSize="30sp"
+                            android:padding="15dp"
+                            android:checked="true"
+                            android:elevation="5dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/new_radio_sel"
+                            android:textColor="@drawable/text_color"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/vegetables"
+                            android:layout_width="180dp"
+                            android:layout_height="70dp"
+                            android:text="@string/vegetables"
+                            android:textSize="30sp"
+                            android:padding="15dp"
+                            android:elevation="5dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/new_radio_sel"
+                            android:textColor="@drawable/text_color"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/fruits"
+                            android:layout_width="180dp"
+                            android:layout_height="70dp"
+                            android:text="@string/fruits"
+                            android:textSize="30sp"
+                            android:padding="15dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/new_radio_sel"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="5dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/grains"
+                            android:layout_width="180dp"
+                            android:layout_height="70dp"
+                            android:text="@string/grains"
+                            android:textSize="30sp"
+                            android:padding="15dp"
+                            android:elevation="5dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/new_radio_sel"
+                            android:textColor="@drawable/text_color"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_below="@id/hori_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/txt_loc"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/loc"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amravati"
+                        android:layout_toEndOf="@id/txt_loc"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="36sp"
+                        android:id="@+id/city_name"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maharashtra"
+                        android:layout_toEndOf="@id/city_name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="36sp"
+                        android:id="@+id/state_name2"/>
+
+                    <ImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/filter_icon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/filter"/>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/card1"
+                android:id="@+id/product_list"/>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/bottom"
+        app:itemTextColor="@drawable/menu_selector"
+        app:itemIconTint="@drawable/menu_selector"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/dealer_menu"
+        android:id="@+id/dealer_bottom_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

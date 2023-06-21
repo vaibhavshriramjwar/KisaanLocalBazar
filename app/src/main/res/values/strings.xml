@@ -1,0 +1,384 @@
+<resources>
+    <string name="app_name">Kisaan Local Bazar</string>
+    <string name="choose_lang">Language you want to use in this app</string>
+
+    <!--Login Screen String-->
+    <string name="role_choose">Choose Your Role</string>
+    <string name="farmer">Farmer</string>
+    <string name="customer">Customer</string>
+    <string name="dealer">Dealer</string>
+    <string name="verify">Verify Your Number</string>
+    <string name="verify_desc">Please enter your Country Code \n and Phone number for verification</string>
+    <string name="mobno">Your Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    <string name="hello_blank_fragment">Today Weather</string>-->
+    <!--    <string name="title_activity_near_by_farmers">Map</string>-->
+    <string name="privacy_policy">
+        Your privacy matters to Kisaan Local Bazar.This Privacy Policy explains how we collect, process, use, share and protect information about you.\n\n It also tells you how you can access and update your information and make certain choicesabout how your information is used.The Privacy Policy covers “online” (e.g., mobile services, including  Mobile Application, however accessed and/orused, whether via personal computers, mobile devices or otherwise) and “offline” (e.g., collectionof data through mailings, telephone, or in person) activities owned, operated, provided, or madeavailable by the Company. Our “online” and “offline” activities, in relation to facilitation of buying products from farmers and dealers
+through a network of third party dealer and farmers operators, are collectively referenced as the “Services”.
+</string>
+
+
+    <!--Verify Otp Screen-->
+    <string name="enter_otp">Enter OTP</string>
+    <string name="we_have_sent_you_an_otp_n_for_phone_number_verification">We have sent you an OTP \n for phone number verification</string>
+    <string name="enter_otp_e">Enter OTP</string>
+    <string name="sign_in">Sign In</string>
+
+
+    <!--Verify Otp Screen-->
+    <string name="change_your_location">Change Your Location</string>
+    <string name="new_location">New Location</string>
+    <string name="update_location">Update Location</string>
+    <!--    <string name="update_product">Update Product</string>-->
+    <string name="product_categories">Product Categories</string>
+    <!--    <string name="product_name">Product Name</string>-->
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_unit">Product Unit</string>
+    <string name="product_rate">Product Rate</string>
+
+
+    <string name="weather_update">Weather Update</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="geo_cords">Geo Cords</string>
+
+
+    <string name="view_products">View Products</string>
+
+    <string name="get_current_location">Get Current Location</string>
+
+    <string name="get_from_map">Get from Map</string>
+
+    <string name="kisaan_local_bazaar">Kisaan Local Bazaar</string>
+
+    <string name="vendor">Vendor</string>
+
+    <string name="dealer_n">Dealer</string>
+
+    <string name="orders">Orders</string>
+
+    <string name="market">Market</string>
+
+    <string name="weather">Weather</string>
+
+    <string name="vendors_around_amravati_area">Vendors Around Amravati Area</string>
+
+    <string name="your_details">Your Details</string>
+
+    <string name="update_your_details">Update Your Details</string>
+
+    <string name="info_form_desc" />
+
+    <string name="your_full_name">Your Full Name</string>
+
+    <string name="location_details">Location Details</string>
+
+    <string name="your_state">Your State</string>
+
+    <string name="your_district">Your District</string>
+
+    <string name="your_tehsil">Your Tehsil</string>
+
+    <string name="complete_address">Complete Address</string>
+
+    <string name="update_info">Update</string>
+
+    <string name="my_order">MY ORDER</string>
+
+    <string name="order_details">ORDER DETAILS</string>
+
+    <string name="your_order_details">Your Order Details</string>
+
+    <string name="shipping_details">Shipping Details :</string>
+
+    <string name="farmer_details">Farmer Details :</string>
+
+    <string name="notification_setting">NOTIFICATION SETTING</string>
+
+    <string name="allow_notification">Allow Notification</string>
+
+    <string name="your_profile">Your Profile</string>
+
+    <string name="you_login_as_a_customer">You Login As a Customer</string>
+
+    <string name="my_order_p">My Order</string>
+
+    <string name="notification">Notification</string>
+
+    <string name="my_delivery_address">My Delivery Address</string>
+
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="privacy_policy_p">Privacy Policy_p</string>
+
+    <string name="developer">Send Feedback</string>
+
+    <string name="about_us">About Us</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="share_app">Share App</string>
+
+    <string name="here_you_go">Here you go!</string>
+
+    <string name="pop_desc">desc</string>
+
+    <string name="make_order">MAKE ORDER</string>
+
+    <string name="cancel">CANCEL</string>
+    <!--
+    <string name="add_product">Add Product</string>-->
+
+    <string name="product_details">Product Details</string>
+
+    <string name="product_name">Product Name</string>
+
+    <string name="product_brand">Product Brand</string>
+
+    <string name="add_image">Add Image</string>
+
+    <string name="attach_appropriate_image_of_product_that_you_can_sell">Attach Appropriate Image of product that you can sell.</string>
+
+    <string name="image_not_updatable_next_time">Image Not Updatable Next Time</string>
+
+    <string name="add_quantity">Add Quantity</string>
+
+    <string name="rate_per_product">Rate Per Product</string>
+
+    <string name="add_product">Add Product</string>
+
+    <string name="title_activity_near_by_farmers">near</string>
+
+    <!--    <string name="product_brand">Product Brand</string>-->
+    <!--    -->
+    <!--    <string name="product_quantity">Product Quantity</string>-->
+    <!--    -->
+    <!--    <string name="product_unit">Product Unit</string>-->
+    <!--    -->
+    <!--    <string name="product_rate">Product Rate</string>-->
+
+    <string name="update_product">Update Product</string>
+
+    <string name="kisaan_local_bazar">Kisaan Local Bazar</string>
+
+    <string name="selling_location">SELLING LOCATION</string>
+
+    <string name="contact_to_farmer">Contact To Farmer</string>
+
+    <string name="search_item">Search item</string>
+
+    <string name="show_all">Show All</string>
+
+    <string name="vegetables">Vegetables</string>
+
+    <string name="fruits">Fruits</string>
+
+    <string name="grains">Grains</string>
+
+    <!--    <string name="product_details">Product Details</string>-->
+
+    <string name="frequently_bought_together">Frequently Bought Together</string>
+
+    <string name="view_cart">VIEW CART</string>
+
+    <string name="add_to_cart">ADD TO CART</string>
+
+    <string name="add_your_details">Add Your Details</string>
+
+    <string name="shop_details">Shop Details</string>
+
+    <string name="shop_name">Shop Name</string>
+
+    <string name="your_name">Your Name</string>
+
+    <string name="shop_location">Shop Location</string>
+
+    <string name="state">State</string>
+
+    <string name="city">City</string>
+
+    <string name="tehsil_sub_area">Tehsil / Sub Area</string>
+
+    <string name="shop_address">Shop Address</string>
+
+    <string name="are_you_provide_home_delivery_service">Are You Provide Home Delivery Service</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="no">No</string>
+
+    <string name="update">Update</string>
+
+    <!--    <string name="kisaan_local_bazaar">Kisaan Local Bazaar</string>-->
+
+    <string name="your_store_is_closed">Your Store Is Closed !</string>
+
+    <!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+
+    <string name="you_disable_home_delivery">You Disable Home Delivery !</string>
+
+    <string name="click_here_to_change_setting">Click Here to change setting</string>
+
+    <string name="your_product">Your Product</string>
+
+    <!--    <string name="order_details">ORDER DETAILS</string>-->
+
+    <string name="call_customer">CALL CUSTOMER</string>
+
+    <string name="good_order_already_completed">Good ! Order Already Completed</string>
+
+    <string name="update_order_status">UPDATE ORDER STATUS</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="you_login_as_dealer">You Login As Dealer</string>
+
+    <string name="check_orders">Check Orders</string>
+
+    <string name="my_product">My Product</string>
+
+    <string name="edit_selling_address">Edit Selling Address</string>
+
+    <string name="store_setting">Store Setting</string>
+
+    <string name="notifications">Notifications</string>
+
+    <string name="my_cart">MY CART</string>
+
+    <string name="your_cart_is_empty">Your cart is Empty!</string>
+
+    <string name="cart_desc">Star shopping now!</string>
+
+    <string name="start_shopping">START SHOPPING</string>
+
+    <string name="shipping_to">Shipping to :</string>
+
+    <string name="shipping_address">Shipping Address :</string>
+
+    <string name="use_this_address">Use this Address</string>
+
+    <string name="no_use_another_address">No! Use another address</string>
+
+    <string name="add_new_location">Add new Location</string>
+
+    <string name="expected_delivery_you_want">Expected delivery you want :</string>
+
+    <string name="your_expected_delivery_date">Your Expected Delivery Date</string>
+
+    <string name="payment_options">Payment Options :</string>
+
+    <string name="order_total">Order Total :</string>
+
+    <string name="proceed">PROCEED</string>
+
+    <string name="seeds">Seeds</string>
+
+    <string name="pesticide">Pesticide</string>
+
+    <string name="fertilizer">Fertilizer</string>
+
+    <string name="machinery">Machinery</string>
+
+    <!--    <string name="your_store_is_closed">Your Store Is Closed !</string>-->
+    <!--    -->
+    <!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+    <!--    -->
+    <!--    <string name="you_disable_home_delivery">You Disable Home Delivery !</string>-->
+    <!--    -->
+    <!--    <string name="click_here_to_change_setting">Click Here to change setting</string>-->
+
+    <string name="desc" />
+
+    <string name="get_exact_location">Get Exact Location</string>
+
+    <string name="bulk_or_home_delivery_available">Bulk Or Home Delivery Available</string>
+
+    <string name="you_login_as_a_farmer">You Login As a Farmer</string>
+
+    <string name="market_rates">Market Rates</string>
+
+    <string name="search_city">Search City</string>
+
+    <string name="district">District</string>
+
+    <!--    <string name="state">State</string>-->
+    <!--    -->
+    <!--    <string name="market">Market</string>-->
+
+    <string name="commodity">Commodity</string>
+
+    <string name="variety">Variety</string>
+
+    <string name="min_price">Min Price</string>
+
+    <string name="max_price">Max Price</string>
+
+    <string name="modal_price">Modal Price</string>
+
+    <string name="filter_search">Filter Search</string>
+
+    <string name="update_status">Update Status</string>
+
+    <string name="current_status">Current Status</string>
+
+    <string name="mentioned_delivery_date">Mentioned Delivery Date</string>
+
+    <string name="change_status">CHANGE STATUS</string>
+
+    <string name="more_about_status"><![CDATA[MORE ABOUT STATUS >>]]></string>
+    <string name="change_language">Change Language</string>
+    <string name="phone_number_required">Number is Required</string>
+    <string name="please_choose_role">Please Choose Your Role</string>
+    <string name="enter_code">Enter code...</string>
+    <string name="name_req">Enter Your Name</string>
+    <string name="state_req">State name is required</string>
+    <string name="dist_req">District name is required</string>
+    <string name="teh_req">Tehsil name is required</string>
+    <string name="add_req">Your Complete Address</string>
+    <string name="info_uodates">Your Information is Updated</string>
+    <string name="are_you_sure">Are you Sure!</string>
+    <string name="update_name">Update Name</string>
+    <string name="update_ad">Update Address</string>
+    <string name="update_city">Update City</string>
+    <string name="edit_sub">Edit Sub Area</string>
+    <string name="edit_st">Edit State</string>
+    <string name="home_del_ser_avail">Home Delivery Service Available</string>
+    <string name="home_del_ser_not_avail">Home Delivery Service Not Available</string>
+    <string name="bulk_avail">BULK SERVICE AVAILABLE</string>
+    <string name="bulk_not_avail">BULK SERVICE NOT AVAILABLE</string>
+    <string name="bulk_availNot">BULK SERVICE NOT MENTIONED</string>
+    <string name="selling_location_req">Selling location is required</string>
+    <string name="home_del_avail_or_not">Please Choose Home Delivery Option</string>
+    <string name="add_shop_location">Add your Shop location</string>
+    <string name="add_your_store_name">Add your Store Name</string>
+    <string name="home_lp">Please Choose Home Delivery Option</string>
+    <string name="refresh">Refresh</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="sample">Text Here</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="upi_id_optional">UPI ID (Optional)</string>
+
+
+    <!--XXX-->
+
+</resources>

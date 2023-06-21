@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_new"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/district"
+                android:text="@string/district"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_district"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="Amaravati"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/state"
+                android:text="@string/state"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_state"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="1013.75 hpa"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/market"
+                android:text="@string/market"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_market"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="100%"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/commodity"
+                android:text="@string/commodity"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_commodity"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="11.00"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/variety"
+                android:text="@string/variety"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_variety"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="18.00"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/min_price"
+                android:text="@string/min_price"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_min_price"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:text="32.0,-81.0"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/max_price"
+                android:text="@string/max_price"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_max_price"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="32.0,-81.0"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/modal_price"
+                android:text="@string/modal_price"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="#45CE30"
+                android:background="@drawable/cell"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_m"
+                android:id="@+id/txt_modal_price"
+                android:layout_marginLeft="8dp"
+                android:layout_column="1"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="32.0,-81.0"
+                android:textColor="#000"
+                android:background="@drawable/cell"/>
+
+        </TableRow>
+
+
+
+
+
+
+    </TableLayout>
+
+</RelativeLayout>

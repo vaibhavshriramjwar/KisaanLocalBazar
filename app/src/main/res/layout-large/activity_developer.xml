@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Developer">
+
+<RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/rel2"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/feedRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0191EA"
+                app:cardCornerRadius="0dp"
+                android:id="@+id/card5"
+                app:cardElevation="00dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send us your feedback!"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:textColor="#fff"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/card_five_title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you have suggestions or found some bugs?\nLet Us know in the field below"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/card_five_title"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:textColor="#fff"
+                        android:id="@+id/card_five_desc"/>
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card5"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:lines="10"
+                    android:background="@drawable/edit"
+                    android:textColorHint="#99AAAB"
+                    android:minLines="5"
+                    android:padding="30dp"
+                    android:hint="Describe your expereince here"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="15" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/update_info"
+                    android:layout_width="450dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/editText1"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#0191EA"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Send Feedback"
+                    android:textAllCaps="false"
+                    app:cornerRadius="5dp"
+                    android:clickable="true"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

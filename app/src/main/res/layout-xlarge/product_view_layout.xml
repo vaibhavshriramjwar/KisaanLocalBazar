@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="0dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/apple"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_img"
+            android:text="Category"
+            android:fontFamily="@font/ubuntu_m"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:textColor="#029346"
+            android:id="@+id/cat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_img"
+            android:layout_below="@id/cat"
+            android:text="Product Name"
+            android:fontFamily="@font/ubuntu_m"
+            android:paddingLeft="10dp"
+            android:textSize="38sp"
+            android:textColor="#000"
+            android:id="@+id/proName"/>
+        <TextView
+            android:id="@+id/product_price1"
+            android:layout_below="@id/proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="2sp"
+            android:layout_toRightOf="@+id/product_img"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="1"
+            android:textSize="38sp"
+            android:textColor="#7B7B7B"/>
+        <TextView
+            android:id="@+id/product_price_unit"
+            android:layout_below="@id/proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2sp"
+            android:layout_toRightOf="@+id/product_price1"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="kg"
+            android:textSize="38sp"
+            android:textColor="#7B7B7B"/>
+        <TextView
+            android:id="@+id/rs"
+            android:layout_below="@id/product_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/product_img"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Rs"
+            android:textSize="38sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_below="@id/product_price_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/product_price1"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="20"
+            android:textSize="38sp"
+            android:textColor="#000"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_img"
+            android:layout_below="@id/price"
+            android:text="From"
+            android:fontFamily="@font/open_sans_semibold"
+            android:paddingLeft="10dp"
+            android:textSize="32sp"
+            android:textColor="#7B7B7B"
+            android:id="@+id/owner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/owner"
+            android:layout_below="@id/price"
+            android:text="Farmer name"
+            android:fontFamily="@font/open_sans_semibold"
+            android:paddingLeft="10dp"
+            android:textSize="32sp"
+            android:textColor="#7B7B7B"
+            android:id="@+id/owner_name"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/bottom"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

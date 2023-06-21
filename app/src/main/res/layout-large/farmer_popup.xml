@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".farmer.Farmer_popup">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_details"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first">
+
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/update_your_details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_below="@id/login_title"
+                android:id="@+id/login_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/desc"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_desc"
+                android:inputType="textPersonName"
+                android:hint="@string/your_full_name"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_below="@id/full_name"
+                android:id="@+id/ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/location_details"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti"
+                android:inputType="textEmailAddress"
+                android:hint="@string/state"
+                android:editable="false"
+                android:focusable="false"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/district"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state"
+                android:inputType="textEmailAddress"
+                android:hint="@string/your_district"
+                android:editable="false"
+                android:focusable="false"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/tehsil"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/district"
+                android:inputType="textEmailAddress"
+                android:hint="@string/tehsil_sub_area"
+                android:editable="false"
+                android:focusable="false"
+
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/get_exact_location"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:visibility="gone"
+                android:layout_below="@id/tehsil"
+                android:layout_centerHorizontal="true"
+
+                android:fontFamily="@font/open_sans_semibold"
+                android:drawableLeft="@drawable/ic_location_searching_24"
+                android:drawablePadding="10dp"
+                android:text="@string/get_exact_location"
+                android:textAllCaps="false"
+                app:cornerRadius="5dp"
+                android:clickable="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"/>
+
+
+
+            <EditText
+                android:id="@+id/selling_location"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/get_exact_location"
+                android:inputType="textMultiLine"
+                android:hint="@string/selling_location"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:editable="false"
+                android:focusable="false"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="8"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_below="@id/selling_location"
+                android:id="@+id/ti1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/bulk_or_home_delivery_available"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:gravity="center_horizontal" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_below="@id/ti1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_below="@id/radio"
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/upi_id_optional"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/upiId"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/up"
+                android:inputType="text"
+                android:hint="@string/upi_id"
+                android:textColorHint="#99AAAB"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:maxLength="6"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_info"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/upiId"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/bottom"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                app:cornerRadius="5dp"
+                android:clickable="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

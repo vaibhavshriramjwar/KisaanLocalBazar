@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".farmer.Farmer_Add_product">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_scroll"
+        android:layout_below="@id/rel2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:id="@+id/rel3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_details"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:id="@+id/selling_title"/>
+
+            <Spinner
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selling_title"
+                android:id="@+id/spin1"
+                android:layout_marginTop="15dp"
+                android:spinnerMode="dialog"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="22dp"
+                />
+
+            <Spinner
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spin1"
+                android:id="@+id/spin2"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_marginTop="15dp"
+                android:spinnerMode="dialog"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/spin2"
+                android:inputType="textEmailAddress"
+                android:hint="@string/add_quantity"
+                android:textColorHint="#99AAAB"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+            <Spinner
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantity"
+                android:id="@+id/spin3"
+                android:layout_marginTop="15dp"
+                android:spinnerMode="dialog"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:padding="22dp"
+                />
+
+            <EditText
+                android:id="@+id/rate"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/spin3"
+                android:inputType="textMultiLine"
+                android:hint="@string/rate_per_product"
+                android:textColorHint="#99AAAB"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:padding="12dp"/>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_product"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/rate"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FFAA00"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/add_product"
+                android:textAllCaps="false"
+                app:cornerRadius="5dp"
+                android:clickable="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_below="@id/add_product"
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="cancel"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:gravity="center_horizontal" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rel3"
+                android:id="@+id/product_list"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

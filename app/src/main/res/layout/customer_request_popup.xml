@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:background="#fff"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center"
+    android:layout_height="400dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_gravity="center">
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+
+    <RelativeLayout
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_fileName="shop1.json"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true" />
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/here_you_go"
+            android:layout_below="@id/animation_view"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:fontFamily="@font/open_sans_bold"/>
+
+        <TextView
+            android:layout_below="@id/txt_title"
+            android:id="@+id/login_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/pop_desc"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:gravity="center_horizontal" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/request_order"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FB641B"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/make_order"
+            app:cornerRadius="5dp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:layout_below="@id/login_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/request_order"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:clickable="true"/>
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

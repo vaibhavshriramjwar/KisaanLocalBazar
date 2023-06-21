@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8F8"
+    tools:context=".farmer.FarmerDealerProfile">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kisaan_local_bazaar"
+            android:layout_centerHorizontal="true"
+            android:textSize="38sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scroll">
+
+
+        <RelativeLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F9F8F8">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="0dp"
+                android:padding="20dp"
+                android:backgroundTint="#fff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/dealer_ic"/>
+
+                    <TextView
+                        android:id="@+id/dealer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@id/profile_img"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:text="Shri Sai Shop"
+                        android:textColor="@color/bottom"
+                        android:textSize="32sp"
+                        android:padding="5dp"/>
+
+
+                    <TextView
+                        android:id="@+id/bulk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/dealer_name"
+                        android:layout_toRightOf="@id/profile_img"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:text="By Vaibhav Shriramjwar"
+                        android:textColor="#000"
+                        android:textSize="37sp"
+                        android:padding="5dp"/>
+
+
+                    <TextView
+                        android:id="@+id/bul2k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/profile_img"
+                        android:text="@string/shop_location"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:textColor="#1A8207"
+                        android:textSize="34sp"
+                        android:padding="0dp"/>
+
+                    <TextView
+                        android:layout_below="@id/bul2k"
+                        android:id="@+id/login_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#000"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="D4,Ramkrushna Apartment,Purva Colony,Sainagar,Amravati"
+                        android:textAlignment="textStart"
+                        android:textSize="34sp"
+                        android:gravity="start" />
+
+
+                    <TextView
+                        android:id="@+id/home_del"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/login_desc"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:text="Home Delivery Service Available"
+                        android:textColor="#1A8207"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Closed"
+                        android:textSize="30sp"
+                        android:textAlignment="center"
+                        android:layout_below="@id/home_del"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#E8290B"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:id="@+id/close_shop"/>
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Open"
+                        android:textSize="30sp"
+                        android:textAlignment="center"
+                        android:layout_below="@id/home_del"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#45CE30"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:id="@+id/open"/>
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card12"
+                android:clickable="true"
+                android:layout_below="@id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="0dp"
+                android:padding="20dp"
+                android:backgroundTint="#fff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_to_farmer"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:id="@+id/con"
+                        android:gravity="center_horizontal" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/call_now"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_below="@id/con"
+                        app:cornerRadius="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="#FFAA00"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="CALL NOW"
+                        android:drawableLeft="@drawable/ic_call_24"
+                        android:textAllCaps="false"
+                        android:clickable="true"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="30sp"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin1"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/card12"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search_field"
+                    android:layout_width="750dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_layout"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:hint="Search item"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#999999"
+                    android:textSize="36sp"
+                    android:autofillHints="" />
+
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_search" />
+
+
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hori_scroll"
+                android:layout_below="@id/lin1"
+                android:scrollbars="none"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/show_all"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Show All"
+                            android:textSize="20sp"
+                            android:padding="25dp"
+                            android:checked="true"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/radio_selector"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="4dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/seed"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seeds"
+                            android:textSize="20sp"
+                            android:padding="25dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/radio_selector"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="4dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/pesticide"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pesticide"
+                            android:textSize="20sp"
+                            android:padding="25dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/radio_selector"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="4dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+                        <RadioButton
+                            android:id="@+id/fertilizer"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fertilizer"
+                            android:textSize="20sp"
+                            android:padding="25dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/radio_selector"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="4dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+
+                        <RadioButton
+                            android:id="@+id/farm_machinery"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/machinery"
+                            android:textSize="20sp"
+                            android:padding="25dp"
+                            android:textAlignment="center"
+                            android:button="@android:color/transparent"
+                            android:background="@drawable/radio_selector"
+                            android:textColor="@drawable/text_color"
+                            android:elevation="4dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:onClick="onRadioButtonClicked"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/hori_scroll"
+                android:id="@+id/product_list"/>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

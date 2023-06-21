@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/new_loc"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="New Location"
+            android:textColorHint="#99AAAB"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"/>
+
+
+        <TextView
+            android:id="@+id/use_geo_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/new_loc"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="Choose Current Location"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:textColor="#25CCF7"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/use_geo_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/use_geo_loc"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="Choose from Map"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:textColor="#FB641B"
+            android:textSize="16sp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_loc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+            android:backgroundTint="#FB641B"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Update Location"
+            app:cornerRadius="0dp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:background="#fff"
+    app:cardCornerRadius="8dp"
+    android:layout_height="300dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:fontFamily="@font/ubuntu_m"
+            android:textColor="#000"
+            android:id="@+id/close"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/marathi">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col3"
+                gl:end_color="@color/col4"
+                gl:orientation="LEFT_RIGHT">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/store1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18sp"
+                        android:text="मराठी"/>
+
+                </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/marathi"
+            android:id="@+id/hindi">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col7"
+                gl:end_color="@color/col8"
+                gl:orientation="LEFT_RIGHT">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18sp"
+                        android:text="हिंदी"/>
+
+                </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            app:cardElevation="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/hindi"
+            android:id="@+id/english">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col9"
+                gl:end_color="@color/col10"
+                gl:orientation="LEFT_RIGHT">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18sp"
+                        android:text="English"/>
+
+                </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RadioButton
+                    android:id="@+id/radioEnglish"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClickedPop"/>
+                <RadioButton
+                    android:id="@+id/radioMarathi"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="मराठी"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClickedPop"/>
+                <RadioButton
+                    android:id="@+id/radioHindi"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="हिंदी"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_selector"
+                    android:textColor="@drawable/text_color"
+                    android:elevation="4dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onRadioButtonClickedPop"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

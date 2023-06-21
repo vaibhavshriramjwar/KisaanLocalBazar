@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:elevation="20dp"
+    android:backgroundTint="#F5F5F5"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:id="@+id/cut"
+            android:fontFamily="@font/ubuntu_m"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/not_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_setting"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/ubuntu_m" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:background="#707070"
+            android:layout_below="@id/not_label"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vi1"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vi1"
+            android:padding="20dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/store_open_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            app:cardCornerRadius="0dp"
+            android:layout_marginTop="20dp">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col1"
+                gl:end_color="@color/col2"
+                gl:orientation="LEFT_RIGHT">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/store_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:text="Store Open"/>
+
+                <TextView
+                    android:id="@+id/store1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_open"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:text="Closed"/>
+
+            </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/store_open_close1"
+            android:layout_below="@id/store_open_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="0dp">
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col3"
+                gl:end_color="@color/col4"
+                gl:orientation="LEFT_RIGHT">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/home_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:text="Home Delivery"/>
+
+
+                <TextView
+                    android:id="@+id/home1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_delivery"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:text="Available"/>
+
+            </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/store_open_close3"
+            android:layout_below="@id/store_open_close1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="0dp">
+
+
+            <net.colindodd.gradientlayout.GradientRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gl:start_color="@color/col5"
+                gl:end_color="@color/col6"
+                gl:orientation="LEFT_RIGHT">
+
+
+
+            <RelativeLayout
+                android:id="@+id/bulk_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/bulk_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:text="Bulk Service"/>
+
+
+                <TextView
+                    android:id="@+id/bulk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bulk_service"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:text="Available"/>
+
+            </RelativeLayout>
+
+            </net.colindodd.gradientlayout.GradientRelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

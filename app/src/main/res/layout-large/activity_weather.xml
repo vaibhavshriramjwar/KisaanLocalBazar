@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:background="#fff"
+    tools:context=".Weather.WeatherActivity">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather_update"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_panel"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_city_name"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:text="Weather in Amravati"
+            android:fontFamily="@font/ubuntu_m"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/img_weather"
+                android:src="@drawable/brand_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_temperature"
+                android:textColor="@color/bottom"
+                android:textSize="50sp"
+                android:fontFamily="@font/ubuntu_m"
+                android:text="24 C"
+                android:layout_marginLeft="18dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_description"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:fontFamily="@font/ubuntu_m"
+            android:gravity="center_horizontal"
+            android:text="Weather in Amravati"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_date_time"
+            android:textColor="@color/bottom"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:fontFamily="@font/ubuntu_m"
+            android:gravity="center_horizontal"
+            android:text="24 C"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_new"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*"
+            android:padding="16dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/wind"
+                    android:text="@string/wind"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_wind"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="Speed : 1 Deg :1"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/pressure"
+                    android:text="@string/pressure"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_pressure"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:text="1013.75 hpa"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/humidity"
+                    android:text="@string/humidity"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_humidity"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:text="100%"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/sunrise"
+                    android:text="@string/sunrise"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_sunrise"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:text="11.00"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/sunset"
+                    android:text="@string/sunset"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_sunset"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:text="18.00"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/geo_cords"
+                    android:text="@string/geo_cords"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:textColor="#25CCF7"
+                    android:background="@drawable/cell"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ubuntu_m"
+                    android:id="@+id/txt_geo_cords"
+                    android:layout_marginLeft="8dp"
+                    android:layout_column="1"
+                    android:text="32.0,-81.0"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:background="@drawable/cell"/>
+
+            </TableRow>
+
+
+
+
+
+
+        </TableLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/refresh"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/complete_address"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/bottom"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            app:cornerRadius="0dp"
+            android:clickable="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"/>
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        app:progressIndeterminate="true"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+</RelativeLayout>

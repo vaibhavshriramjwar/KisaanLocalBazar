@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".PrivacyPolicy">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/rel2"
+        android:elevation="5dp"
+        android:background="#FF6F00"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ubuntu_m"/>
+
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:id="@+id/close"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="PRIVACY POLICY"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="#000"
+                android:id="@+id/lbl1"/>
+
+            <View
+                android:layout_width="280dp"
+                android:layout_height="1dp"
+                android:background="#7B8788"
+                android:layout_below="@id/lbl1"
+                android:id="@+id/vi1"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="1) how we accessed  the user location ?"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/vi1"
+                android:id="@+id/lbl2"/>
+
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/post_detail_desc"
+                android:layout_width="350dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:layout_below="@id/lbl2"
+                android:layout_centerHorizontal="true"
+                android:textColor="#616C6F"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_height="wrap_content"
+                android:text="Kisaan Local Bazar access the user location after the user gives us permission to
+access their current location otherwise user fill their current location manually."
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="2) which type of data do we need?"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/post_detail_desc"
+                android:id="@+id/lbl3"/>
+
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/post_detail_desc2"
+                android:layout_width="350dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:layout_below="@id/lbl3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#616C6F"
+                android:padding="0dp"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_height="wrap_content"
+                android:text="The app requirment change as per user role change.If User Role is customer then
+user need to input some information such as\n\n
+
+1)Full Name\n
+2)State\n
+3)District\n
+4)Complete Address\n\n
+
+If user role is Farmer\n\n
+
+1)Full Name\n
+2)State\n
+3)District\n
+4)Selling Location\n
+
+If user role is Dealer\n\n
+
+1)Full Name\n
+2)State\n
+3)District\n
+4)Selling Location\n
+
+"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
